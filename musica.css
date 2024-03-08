@@ -1,0 +1,255 @@
+/*|---------------nome das musicas----------|*/
+.nomeMu{
+    
+    width: 100%;
+   margin-top: -1ch;
+
+}
+
+.play li{
+   text-decoration: none;
+    text-align: left;
+    color: #fff;
+    display: block;
+    left: unset;
+    position: relative;
+   margin-top:5px ;
+   border: 2px solid rgb(0, 0, 0);
+   border-radius: 10px;
+    background: rgba(0,0, 0,0.30);
+    transition: 1000ms;
+    
+}
+.pisca{
+   
+    animation: piscada 2.5s infinite;
+}
+.play li img{
+    margin: 4px;
+    width: 5ch;
+    height: 5ch;
+    border-radius: 0px;
+}
+.play hr{
+    width: 80%;
+    background: #e9ecef;
+    color: #e9ecef;
+}
+.play{
+    position: relative;
+    width: 50%;
+    height: 91%;
+    backdrop-filter: blur(25px);
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    z-index: 1;
+   
+}
+.play img{
+    width:10ch;
+    height:10ch;
+    margin: 1.5ch 5ch;
+    border-radius: 50%;
+}
+ .play audio{
+    width: 10ch;
+   background: #ffffff;
+}
+/*parte branca que fia n aperto do meio*/
+.borda{
+    position: absolute;
+    top: 5ch;
+    width: 3ch;
+    height: 3ch;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.roda{
+    animation: voa 4s  linear infinite;
+    /*animation-direction: alternate-reverse;*/
+}
+.play source{
+    color: #DDAC2E;
+    background: #fff;
+}
+/* parte de colocra amusica pra tocar */
+.music{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+/*-----barra de progresso-----------*/
+#atual{
+    position: relative;
+    text-align: left;
+    left: -22ch;
+    font-size: 10px;
+    color: #fff;
+}
+#totalT{
+    position: relative;
+    text-align: right;
+    left: 22ch;
+    top: -5ch;
+    font-size: 10px;
+    color: #fff;
+}
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1ch;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    width: 93%;
+}
+.title{
+    color: #fff;
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 10px;
+    background: none;
+}
+.player{
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    min-height: 100px;
+    color: #fff;
+    background: rgb(241, 241, 245);
+    
+}
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    background: none;
+    top:0ch;
+
+}
+.btn span{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #777;
+    box-shadow: inset 0 -5px -5px rgba(0,0, 0,0.1);
+}
+.icon-inner, .ionicon, svg {
+    display: block;
+    height: 100%;
+    background: #fff;
+    width: 99%;
+}
+.btn span.playPause{
+    width: 90px;
+    height: 80px;
+}
+.btn span ion-icon{
+    font-size: 1em;
+}
+.btn span.playPause ion-icon{
+    font-size: 2em;
+}
+.btn span:active,
+.btn span.active{
+   
+    box-shadow: inset 0 -7px 5px rgba(0,0, 0,0.25),
+                inset 0 5px 10px rgba(0,0, 0,0.25);                                    
+}
+
+/*------lista de reprodução--------*/
+@keyframes piscada{
+    0%{
+        background: rgba(121, 67, 121, 0.6);
+
+    }
+    
+    50%{
+        background: rgba(121, 67, 121, 0.1);
+    }
+    100%{
+        background: rgba(121, 67, 121, 0.7);
+    }
+              
+}
+@keyframes voa{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+              
+}
+/*--------------------------------mobilo--------------------**/
+@media (max-width:600px) {
+
+    .play{
+        position: relative;
+        width: 35ch;
+        height: 45ch;
+        backdrop-filter: blur(25px);
+        display: flex;
+        margin-top: 15ch;
+        margin-left: 7%;
+        border-radius: 15px;
+        align-items: center;
+        flex-direction: column;    
+        border: 1px solid #fff;
+    }
+
+
+}
+@media (max-width:412px) {
+  
+    .play {
+        position: relative;
+        width: 16ch;
+        height: 31ch;
+        backdrop-filter: blur(25px);
+        display: flex;
+        margin-top: 0ch;
+        margin-left: 0%;
+        border-radius: 15px;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #fff;
+    }
+}
+
+@media (max-width:360px) {
+  
+    .play {
+        position: relative;
+        width: 35ch;
+        height: 45ch;
+        backdrop-filter: blur(25px);
+        display: flex;
+        margin-top: 15ch;
+        margin-left: 1%;
+        border-radius: 15px;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #fff;
+    }
+}

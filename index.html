@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="musica.css">
+    <title>Amor</title>
+</head>
+<body>
+    <div id="geral" class="geral">
+        <img class="gg" src="https://i.pinimg.com/originals/23/68/d8/2368d840975d76d7e519ee57b5fb6ed4.gif" alt=""> 
+        <div class="menu">
+            <div class="bar">
+                <!--PARTI DOS MENUS-->
+                <div onclick="declara()" class="parti">
+                    <p>Declaração</p>
+                   
+                </div>
+                <div onclick="musica()" class="parti">
+                    <p>Música</p>
+                    
+                </div>
+              
+            </div><!--MENU DE ESCOLHA-->
+        <div id="card" class="card">
+            <div id="play" class="play">
+                <img  id="img" class="" src="" >
+                     <div class="borda"></div>
+                
+                 <p class="title">Music</p>
+                     <audio id="audio1" src=""></audio>
+                     <div id="progresss" class="progress"></div>
+                     <div id="tempo"> <p id="atual"></p><p id="totalT"></p></div>
+                     <div class="btn">   
+                         <span class="prev">
+                             <ion-icon style="background: #fff;"  name="play-back-outline"></ion-icon>
+                         </span>
+                         <span class="playPause ">
+                             <ion-icon style="background: #fff;" name="play-outline"></ion-icon>
+                         </span>
+                         <span class="next">
+                             <ion-icon style="background: #fff;" name="play-forward-outline"></ion-icon>
+                         </span>
+                     </div>
+                     <div style="color: #fff;" class="nomeMu"id="nomeMu">
+                       
+                 </div>
+                 
+               </div>
+           
+               <div id="caio" class="caio"></div>
+        
+        </div>
+    </div><!--geral-->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="musicS.js"></script>
+ <script>
+   var typed = new Typed(".auto-input",{
+       strings:["a várias formas homenagear alguém, uns dão flores outros dão presentes no entanto você não como as outras mulheres e por isso fiz isso, uma coisa única que não existe nada igual no mundo única como você, fiz esse código pois aqui na internet ele e infinito como eu gostaria que você fosse, ele e único como você é, e achei lindo o resultado como você também e, enfim e só uma lembrança para lembrar você que você e especial ","uma lembrança como varias outras que tão por vim que vamos construir juntos, em resumo gostaria de te deseja um feliz dia das mulheres"],
+       typeSpeed:150,
+       backSpeed:150,
+       loop:true
+   })
+   function declara(){
+    card.innerHTML=` <div class="img" id="img">
+                <img src="amor.jpg" alt="">
+            </div>
+            <p id="auto-input" class="auto-input"> </p>`
+
+
+
+            var typed = new Typed(".auto-input",{
+       strings:[" ","a várias formas homenagear alguém, uns dão flores outros dão presentes no entanto você não como as outras mulheres e por isso fiz isso, uma coisa única que não existe nada igual no mundo única como você, fiz esse código pois aqui na internet ele e infinito como eu gostaria que você fosse, ele e único como você é, e achei lindo o resultado como você também e, enfim e só uma lembrança para lembrar você que você e especial uma lembrança como varias outras que tão por vim que vamos construir juntos, em resumo gostaria de te deseja um feliz dia das mulheres "],
+       typeSpeed:150,
+       backSpeed:150,
+       loop:true
+   })
+   }
+
+   function musica(){
+    window.location.reload(false);
+   }
+  
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ 
+</body>
+</html>
