@@ -11,9 +11,9 @@ console.log(maximo);
 //craia o objeto que vai ficra com a lista das musicas e tambem com a pasta
 const songListe = [
     {
-        path: "./music/Benson Boone - Beautiful Things (Official Music Video)(M4A_128K).mp3",
-        songName: "Beautiful Things",
-        img: "https://i.gifer.com/origin/46/464c286080ca94f58d2edea0792f7e68.gif"
+        path: "./music/nos.mp3",
+        songName: "Minha Van",
+        img: "disco.jpg"
     }
 ];
 /*------- parte para fazer a nome da musica biscas---------- */
